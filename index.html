@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Contact — Jonna Gill</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link rel="stylesheet" href="responsive.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="anonymous" />
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;1,300;1,400&family=Jost:wght@300;400;500&display=swap" rel="stylesheet" />
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    body { background: #FAFAF8; color: #111110; font-family: 'Jost', sans-serif; font-weight: 300; -webkit-font-smoothing: antialiased; }
+    a { color: #111110; text-decoration: none; }
+    a:hover { color: #6B5E4A; }
+    input, textarea, select { font-family: 'Jost', sans-serif; }
+    input:focus, textarea:focus { outline: 1px solid #111110; }
+    input::placeholder, textarea::placeholder { color: rgba(17,17,16,0.35); }
+  </style>
+</head>
+<body>
+<nav style="position:fixed;top:0;left:0;right:0;z-index:100;background:#FAFAF8;border-bottom:1px solid rgba(17,17,16,0.1);display:flex;align-items:center;justify-content:space-between;padding:0 48px;height:68px;font-family:'Jost',sans-serif;" id="site-nav">
+  <a href="index.html" style="font-family:'Cormorant Garamond',serif;font-size:22px;font-weight:500;letter-spacing:0.12em;text-transform:uppercase;color:#111110;">Jonna Gill</a>
+  <div class="nav-links" style="display:flex;gap:40px;align-items:center;">
+    <a href="about.html" style="font-size:12px;letter-spacing:0.14em;text-transform:uppercase;font-weight:400;border-bottom:none;padding-bottom:2px;">About</a>
+    <a href="speaking.html" style="font-size:12px;letter-spacing:0.14em;text-transform:uppercase;font-weight:400;border-bottom:none;padding-bottom:2px;">Speaking</a>
+    <a href="method.html" style="font-size:12px;letter-spacing:0.14em;text-transform:uppercase;font-weight:400;border-bottom:none;padding-bottom:2px;">The Method</a>
+    <a href="community.html" style="font-size:12px;letter-spacing:0.14em;text-transform:uppercase;font-weight:400;border-bottom:none;padding-bottom:2px;">Community</a>
+    <a href="contact.html" style="font-size:12px;letter-spacing:0.14em;text-transform:uppercase;font-weight:400;border:1px solid #111110;padding:10px 22px;">Contact</a>
+  </div>
+  <button class="nav-hamburger" id="nav-hamburger" style="display:none;flex-direction:column;gap:5px;background:none;border:none;cursor:pointer;padding:8px;" aria-label="Menu">
+    <span id="hb1" style="display:block;width:24px;height:1.5px;background:#111110;transition:transform 0.3s,opacity 0.3s;"></span>
+    <span id="hb2" style="display:block;width:24px;height:1.5px;background:#111110;transition:transform 0.3s,opacity 0.3s;"></span>
+    <span id="hb3" style="display:block;width:24px;height:1.5px;background:#111110;transition:transform 0.3s,opacity 0.3s;"></span>
+  </button>
+</nav>
+
+<!-- PAGE HEADER -->
+<section class="page-header" style="background: #FFFFFF; padding: 148px 48px 80px; border-bottom: 1px solid rgba(17,17,16,0.08);">
+  <div style="max-width: 1100px; margin: 0 auto;">
+    <p style="font-size: 11px; letter-spacing: 0.22em; text-transform: uppercase; color: rgba(17,17,16,0.4); margin-bottom: 16px;">Get in Touch</p>
+    <h1 class="fx-reveal" data-dir="up" style="font-family: 'Cormorant Garamond', serif; font-size: clamp(56px, 8vw, 120px); font-weight: 300; line-height: 0.9; letter-spacing: 0.02em;">Let's<br />Connect</h1>
+  </div>
+</section>
+
+<!-- CONTACT LAYOUT -->
+<section style="background: #FFFFFF; padding: 80px 48px 120px;">
+  <div class="contact-grid" style="max-width: 1100px; margin: 0 auto; display: grid; grid-template-columns: 1fr 1fr; gap: 80px; align-items: start;">
+
+    <!-- Left: context -->
+    <div style="display: flex; flex-direction: column; gap: 48px; padding-top: 8px;">
+      <p style="font-size: 19px; line-height: 1.85; color: #2A2A28; font-weight: 300;">
+        Whether you are looking to book Jonna for a speaking engagement, explore working together, or simply want to be part of the conversation, reach out. She reads everything.
+      </p>
+
+      <div style="display: flex; flex-direction: column; gap: 32px;">
+        <div>
+          <div style="height: 1px; background: rgba(17,17,16,0.12); margin-bottom: 20px;"></div>
+          <p style="font-size: 12px; letter-spacing: 0.14em; text-transform: uppercase; margin-bottom: 8px; font-weight: 400;">Speaking Inquiries</p>
+          <p style="font-size: 15px; line-height: 1.75; color: #555552; font-weight: 300;">To book Jonna for a keynote, workshop, or event, please include details about your organization, audience size, and preferred dates.</p>
+        </div>
+        <div>
+          <div style="height: 1px; background: rgba(17,17,16,0.12); margin-bottom: 20px;"></div>
+          <p style="font-size: 12px; letter-spacing: 0.14em; text-transform: uppercase; margin-bottom: 8px; font-weight: 400;">The New Thinkers Club</p>
+          <p style="font-size: 15px; line-height: 1.75; color: #555552; font-weight: 300;">Interested in joining the community? Let us know a little about yourself and what drew you here.</p>
+        </div>
+        <div>
+          <div style="height: 1px; background: rgba(17,17,16,0.12); margin-bottom: 20px;"></div>
+          <p style="font-size: 12px; letter-spacing: 0.14em; text-transform: uppercase; margin-bottom: 8px; font-weight: 400;">General</p>
+          <p style="font-size: 15px; line-height: 1.75; color: #555552; font-weight: 300;">For anything else, including media, collaboration, or just to say hello.</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Right: form -->
+    <div style="display: flex; flex-direction: column; gap: 16px;">
+      <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 16px;">
+        <input type="text" placeholder="First Name" style="
+          padding: 18px 20px;
+          border: 1px solid rgba(17,17,16,0.18);
+          background: transparent;
+          font-size: 15px;
+          font-weight: 300;
+          color: #111110;
+          width: 100%;
+        " />
+        <input type="text" placeholder="Last Name" style="
+          padding: 18px 20px;
+          border: 1px solid rgba(17,17,16,0.18);
+          background: transparent;
+          font-size: 15px;
+          font-weight: 300;
+          color: #111110;
+          width: 100%;
+        " />
+      </div>
+      <input type="email" placeholder="Email Address" style="
+        padding: 18px 20px;
+        border: 1px solid rgba(17,17,16,0.18);
+        background: transparent;
+        font-size: 15px;
+        font-weight: 300;
+        color: #111110;
+        width: 100%;
+      " />
+      <select style="
+        padding: 18px 20px;
+        border: 1px solid rgba(17,17,16,0.18);
+        background: transparent;
+        font-size: 15px;
+        font-weight: 300;
+        color: #111110;
+        width: 100%;
+        appearance: none;
+        cursor: pointer;
+      ">
+        <option value="" disabled selected style="color: rgba(17,17,16,0.35);">Reason for reaching out</option>
+        <option>Speaking Inquiry</option>
+        <option>Workshop or Retreat</option>
+        <option>Private Consulting</option>
+        <option>The New Thinkers Club</option>
+        <option>Media or Press</option>
+        <option>General</option>
+      </select>
+      <textarea placeholder="Your message" rows="7" style="
+        padding: 18px 20px;
+        border: 1px solid rgba(17,17,16,0.18);
+        background: transparent;
+        font-size: 15px;
+        font-weight: 300;
+        color: #111110;
+        width: 100%;
+        resize: vertical;
+        line-height: 1.7;
+      "></textarea>
+      <button style="
+        width: 100%;
+        background: #111110;
+        color: #FAFAF8;
+        border: none;
+        font-size: 12px;
+        letter-spacing: 0.18em;
+        text-transform: uppercase;
+        padding: 20px;
+        cursor: pointer; font-weight: 400; font-family: 'Jost', sans-serif;" class="fx-btn">Send Message</button>
+    </div>
+
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer class="site-footer" style="background: #111110; color: rgba(250,250,248,0.5); padding: 48px; display: flex; align-items: center; justify-content: space-between; border-top: 1px solid rgba(250,250,248,0.08); font-family: 'Jost', sans-serif;">
+  <div>
+    <p style="font-family: 'Cormorant Garamond', serif; font-size: 20px; font-weight: 400; letter-spacing: 0.1em; text-transform: uppercase; color: #FAFAF8; margin-bottom: 6px;">Jonna Gill</p>
+    <p style="font-size: 12px; letter-spacing: 0.12em;">Speaker · Artist · Filmmaker</p>
+  </div>
+  <div class="footer-links" style="display: flex; gap: 32px;">
+    <a href="index.html" style="font-size: 12px; letter-spacing: 0.12em; text-transform: uppercase; color: rgba(250,250,248,0.5);">Home</a>
+    <a href="about.html" style="font-size: 12px; letter-spacing: 0.12em; text-transform: uppercase; color: rgba(250,250,248,0.5);">About</a>
+    <a href="method.html" style="font-size: 12px; letter-spacing: 0.12em; text-transform: uppercase; color: rgba(250,250,248,0.5);">The Method</a>
+    <a href="speaking.html" style="font-size: 12px; letter-spacing: 0.12em; text-transform: uppercase; color: rgba(250,250,248,0.5);">Speaking</a>
+    <a href="community.html" style="font-size: 12px; letter-spacing: 0.12em; text-transform: uppercase; color: rgba(250,250,248,0.5);">Community</a>
+  </div>
+  <div style="text-align: right; font-size: 12px;">
+    <p style="letter-spacing: 0.1em;">www.meetjonnagill.com</p>
+    <p style="margin-top: 4px;">© 2026 Jonna Gill</p>
+  </div>
+</footer>
+<script>
+function fxInit() {
+  // Inject CSS
+  if (!document.getElementById('_fx')) {
+    const st = document.createElement('style');
+    st.id = '_fx';
+    const rules = [
+      '.fx-card{transition:transform .35s,box-shadow .35s}',
+      '.fx-card:hover{transform:translateY(-7px);box-shadow:0 16px 48px rgba(17,17,16,.1)}',
+      '.fx-btn{position:relative;overflow:hidden}',
+      '.fx-btn::after{content:"";position:absolute;inset:0;background:rgba(107,94,74,.14);transform:translateX(-101%);transition:transform .35s}',
+      '.fx-btn:hover::after{transform:translateX(0)}',
+      '.fx-btn-inv{position:relative;overflow:hidden}',
+      '.fx-btn-inv::after{content:"";position:absolute;inset:0;background:rgba(250,250,248,.1);transform:translateX(-101%);transition:transform .35s}',
+      '.fx-btn-inv:hover::after{transform:translateX(0)}',
+      '@keyframes fx-float{0%,100%{transform:translateX(-50%) translateY(0);opacity:.4}50%{transform:translateX(-50%) translateY(10px);opacity:.8}}',
+      '.fx-float{animation:fx-float 2.6s ease-in-out infinite}',
+      '@keyframes fx-blink{0%,100%{opacity:1}50%{opacity:0}}',
+    ];
+    st.textContent = rules.join('\n');
+    document.head.appendChild(st);
+  }
+
+  // Reveal
+  const revEls = [...document.querySelectorAll('.fx-reveal')];
+  revEls.forEach(el => {
+    el.style.opacity = '0';
+    const dir = el.dataset.dir || 'up';
+    if (dir === 'up')    el.style.transform = 'translateY(40px)';
+    if (dir === 'left')  el.style.transform = 'translateX(-40px)';
+    if (dir === 'right') el.style.transform = 'translateX(40px)';
+    el.style.transition = 'opacity .9s cubic-bezier(.22,.68,0,1.1),transform .9s cubic-bezier(.22,.68,0,1.1)';
+    el.style.transitionDelay = (el.dataset.delay || '0') + 'ms';
+  });
+  const io = new IntersectionObserver(entries => {
+    entries.forEach(e => {
+      if (!e.isIntersecting) return;
+      e.target.style.opacity = '1';
+      e.target.style.transform = 'translate(0,0)';
+      io.unobserve(e.target);
+    });
+  }, { threshold: 0.1 });
+  revEls.forEach(el => io.observe(el));
+
+  // Stagger
+  document.querySelectorAll('.fx-stagger').forEach(parent => {
+    [...parent.children].forEach((child, i) => {
+      child.style.opacity = '0';
+      child.style.transform = 'translateY(30px)';
+      child.style.transition = 'opacity .75s cubic-bezier(.22,.68,0,1.1),transform .75s cubic-bezier(.22,.68,0,1.1)';
+      child.style.transitionDelay = (i * 120) + 'ms';
+      io.observe(child);
+    });
+  });
+
+  // Parallax
+  const pImgs = [...document.querySelectorAll('.fx-parallax')];
+  pImgs.forEach(img => {
+    Object.assign(img.style, { height:'150%', width:'100%', top:'-25%', left:'0', position:'absolute', objectFit:'cover', willChange:'transform' });
+  });
+  let ticking = false;
+  const updateP = () => {
+    pImgs.forEach(img => {
+      const r = img.parentElement.getBoundingClientRect();
+      const prog = (window.innerHeight / 2 - (r.top + r.height / 2)) / window.innerHeight;
+      img.style.transform = 'translateY(' + (prog * 0.25 * 320) + 'px)';
+    });
+    ticking = false;
+  };
+  if (pImgs.length) {
+    window.addEventListener('scroll', () => { if (!ticking) { requestAnimationFrame(updateP); ticking = true; } }, { passive: true });
+    updateP();
+  }
+
+  // Typewriter
+  document.querySelectorAll('[data-typewriter]').forEach(el => {
+    const text = el.textContent;
+    el.textContent = '';
+    const cursor = document.createElement('span');
+    cursor.textContent = '|';
+    cursor.style.cssText = 'animation:fx-blink .8s ease-in-out infinite;margin-left:1px';
+    el.appendChild(cursor);
+    let i = 0;
+    const delay = parseInt(el.dataset.twDelay || '700');
+    setTimeout(function type() {
+      if (i < text.length) { cursor.before(text[i++]); setTimeout(type, 55); }
+      else setTimeout(() => cursor.remove(), 900);
+    }, delay);
+  });
+
+  // Count-up
+  const cio = new IntersectionObserver(entries => {
+    entries.forEach(e => {
+      if (!e.isIntersecting) return;
+      const el = e.target;
+      const target = parseInt(el.dataset.count);
+      const pad = parseInt(el.dataset.pad || '2');
+      let i = 0;
+      const step = Math.max(1200 / target, 40);
+      const t = setInterval(() => {
+        i++;
+        el.textContent = String(i).padStart(pad, '0');
+        if (i >= target) clearInterval(t);
+      }, step);
+      cio.unobserve(el);
+    });
+  }, { threshold: 0.5 });
+  document.querySelectorAll('[data-count]').forEach(el => { el.textContent = '00'; cio.observe(el); });
+
+  // Nav shadow
+  const nav = document.getElementById('site-nav');
+  if (nav) {
+    window.addEventListener('scroll', () => {
+      nav.style.boxShadow = window.scrollY > 20 ? '0 2px 24px rgba(17,17,16,.07)' : 'none';
+    }, { passive: true });
+  }
+}
+
+
+const _btn=document.getElementById('nav-hamburger'),_links=document.querySelector('.nav-links'),_h1=document.getElementById('hb1'),_h2=document.getElementById('hb2'),_h3=document.getElementById('hb3');
+if(_btn&&_links){let _o=false;_btn.addEventListener('click',()=>{_o=!_o;_links.classList.toggle('open',_o);if(_o){_h1.style.transform='translateY(6.5px) rotate(45deg)';_h2.style.opacity='0';_h3.style.transform='translateY(-6.5px) rotate(-45deg)';}else{_h1.style.transform='';_h2.style.opacity='1';_h3.style.transform='';}});_links.querySelectorAll('a').forEach(a=>a.addEventListener('click',()=>{_o=false;_links.classList.remove('open');_h1.style.transform='';_h2.style.opacity='1';_h3.style.transform='';}));}
+
+document.addEventListener('DOMContentLoaded', function() {
+  fxInit();
+  
+});
+</script>
+</body>
+</html>

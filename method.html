@@ -1,0 +1,310 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>The Power Reclamation Method — Jonna Gill</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link rel="stylesheet" href="responsive.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="anonymous" />
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;1,300;1,400&family=Jost:wght@300;400;500&display=swap" rel="stylesheet" />
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    body { background: #FAFAF8; color: #111110; font-family: 'Jost', sans-serif; font-weight: 300; -webkit-font-smoothing: antialiased; }
+    a { color: #111110; text-decoration: none; }
+    a:hover { color: #6B5E4A; }
+  </style>
+</head>
+<body>
+<nav style="position:fixed;top:0;left:0;right:0;z-index:100;background:#FAFAF8;border-bottom:1px solid rgba(17,17,16,0.1);display:flex;align-items:center;justify-content:space-between;padding:0 48px;height:68px;font-family:'Jost',sans-serif;" id="site-nav">
+  <a href="index.html" style="font-family:'Cormorant Garamond',serif;font-size:22px;font-weight:500;letter-spacing:0.12em;text-transform:uppercase;color:#111110;">Jonna Gill</a>
+  <div class="nav-links" style="display:flex;gap:40px;align-items:center;">
+    <a href="about.html" style="font-size:12px;letter-spacing:0.14em;text-transform:uppercase;font-weight:400;border-bottom:none;padding-bottom:2px;">About</a>
+    <a href="speaking.html" style="font-size:12px;letter-spacing:0.14em;text-transform:uppercase;font-weight:400;border-bottom:none;padding-bottom:2px;">Speaking</a>
+    <a href="method.html" style="font-size:12px;letter-spacing:0.14em;text-transform:uppercase;font-weight:400;border-bottom:1px solid #111110;padding-bottom:2px;">The Method</a>
+    <a href="community.html" style="font-size:12px;letter-spacing:0.14em;text-transform:uppercase;font-weight:400;border-bottom:none;padding-bottom:2px;">Community</a>
+    <a href="contact.html" style="font-size:12px;letter-spacing:0.14em;text-transform:uppercase;font-weight:400;border:1px solid #111110;padding:10px 22px;">Contact</a>
+  </div>
+  <button class="nav-hamburger" id="nav-hamburger" style="display:none;flex-direction:column;gap:5px;background:none;border:none;cursor:pointer;padding:8px;" aria-label="Menu">
+    <span id="hb1" style="display:block;width:24px;height:1.5px;background:#111110;transition:transform 0.3s,opacity 0.3s;"></span>
+    <span id="hb2" style="display:block;width:24px;height:1.5px;background:#111110;transition:transform 0.3s,opacity 0.3s;"></span>
+    <span id="hb3" style="display:block;width:24px;height:1.5px;background:#111110;transition:transform 0.3s,opacity 0.3s;"></span>
+  </button>
+</nav>
+
+<!-- PAGE HEADER -->
+<section class="page-header" style="background: #F2EDE4; padding: 148px 48px 80px; border-bottom: 1px solid rgba(17,17,16,0.08);">
+  <div style="max-width: 1100px; margin: 0 auto;">
+    <p style="font-size: 11px; letter-spacing: 0.22em; text-transform: uppercase; color: rgba(17,17,16,0.4); margin-bottom: 16px;">The Practice</p>
+    <h1 class="fx-reveal" data-dir="up" style="font-family: 'Cormorant Garamond', serif; font-size: clamp(48px, 7vw, 110px); font-weight: 300; line-height: 0.92; letter-spacing: 0.02em;">The Power<br />Reclamation<br />Method</h1>
+  </div>
+</section>
+
+<!-- INTRO -->
+<section style="background: #F2EDE4; padding: 60px 48px 100px;">
+  <div class="grid-2col" style="max-width: 1100px; margin: 0 auto; display: grid; grid-template-columns: 1fr 1fr; gap: 80px; align-items: start;">
+    <div>
+      <p style="font-size: 20px; line-height: 1.85; color: #2A2A28; font-weight: 300; margin-bottom: 28px;">
+        Reclaim your agency, reclaim your authority, rediscover your innate power. Create your life with intention and help shape the world you want to live in.
+      </p>
+      <p style="font-size: 16px; line-height: 1.85; color: #444442; font-weight: 300;">
+        A simple, disciplined practice for creating meaningful change in your life and in the world around you.
+      </p>
+    </div>
+    <div>
+      <blockquote style="
+        font-family: 'Cormorant Garamond', serif;
+        font-size: clamp(22px, 2.8vw, 34px);
+        font-style: italic;
+        font-weight: 300;
+        line-height: 1.5;
+        color: #111110;
+        border-left: 2px solid #111110;
+        padding-left: 28px;
+      ">The greatest transformations begin long before they become visible. They begin the moment an individual stops surrendering authorship over their own mind.</blockquote>
+    </div>
+  </div>
+</section>
+
+<!-- THE FIVE PILLARS -->
+<section style="background: #FFFFFF; padding: 100px 48px;">
+  <div style="max-width: 1100px; margin: 0 auto;">
+    <p style="font-size: 11px; letter-spacing: 0.22em; text-transform: uppercase; color: rgba(17,17,16,0.4); margin-bottom: 56px;">The Five Pillars</p>
+
+    <div class="fx-stagger" style="display: flex; flex-direction: column; gap: 0;">
+
+      <div class="pillars-row" style="display: grid; grid-template-columns: 80px 1fr 1fr; gap: 40px; padding: 48px 0; border-top: 1px solid rgba(17,17,16,0.12); align-items: start;">
+        <span style="font-family: 'Cormorant Garamond', serif; font-size: 48px; font-weight: 300; color: rgba(17,17,16,0.15); line-height: 1;" data-count="1" data-pad="2">01</span>
+        <div>
+          <p style="font-size: 22px; font-weight: 400; margin-bottom: 12px; font-family: 'Cormorant Garamond', serif; letter-spacing: 0.02em;">Reclaim Your Agency</p>
+          <p style="font-size: 15px; line-height: 1.8; color: #555552; font-weight: 300;">Recognize where you have surrendered your capacity to act and take it back.</p>
+        </div>
+        <div class="pillar-desc" style="padding-top: 4px;">
+          <p style="font-size: 14px; line-height: 1.8; color: #777775; font-weight: 300; font-style: italic;">Agency is your ability to choose, to respond, to move forward on your own terms. When we give it away, we give away the pen to our own story.</p>
+        </div>
+      </div>
+
+      <div class="pillars-row" style="display: grid; grid-template-columns: 80px 1fr 1fr; gap: 40px; padding: 48px 0; border-top: 1px solid rgba(17,17,16,0.12); align-items: start;">
+        <span style="font-family: 'Cormorant Garamond', serif; font-size: 48px; font-weight: 300; color: rgba(17,17,16,0.15); line-height: 1;" data-count="2" data-pad="2">02</span>
+        <div>
+          <p style="font-size: 22px; font-weight: 400; margin-bottom: 12px; font-family: 'Cormorant Garamond', serif; letter-spacing: 0.02em;">Reclaim Your Authority</p>
+          <p style="font-size: 15px; line-height: 1.8; color: #555552; font-weight: 300;">Become the primary author of your own life, narrative, and direction.</p>
+        </div>
+        <div class="pillar-desc" style="padding-top: 4px;">
+          <p style="font-size: 14px; line-height: 1.8; color: #777775; font-weight: 300; font-style: italic;">Authority is not dominance over others. It is the quiet, firm ownership of your own choices, values, and path forward.</p>
+        </div>
+      </div>
+
+      <div class="pillars-row" style="display: grid; grid-template-columns: 80px 1fr 1fr; gap: 40px; padding: 48px 0; border-top: 1px solid rgba(17,17,16,0.12); align-items: start;">
+        <span style="font-family: 'Cormorant Garamond', serif; font-size: 48px; font-weight: 300; color: rgba(17,17,16,0.15); line-height: 1;" data-count="3" data-pad="2">03</span>
+        <div>
+          <p style="font-size: 22px; font-weight: 400; margin-bottom: 12px; font-family: 'Cormorant Garamond', serif; letter-spacing: 0.02em;">Rediscover Your Innate Power</p>
+          <p style="font-size: 15px; line-height: 1.8; color: #555552; font-weight: 300;">Reconnect with the power you were born with, before the world convinced you it wasn't yours.</p>
+        </div>
+        <div class="pillar-desc" style="padding-top: 4px;">
+          <p style="font-size: 14px; line-height: 1.8; color: #777775; font-weight: 300; font-style: italic;">This power was never lost. It was buried under conditioning, compliance, and inherited stories about who gets to be powerful.</p>
+        </div>
+      </div>
+
+      <div class="pillars-row" style="display: grid; grid-template-columns: 80px 1fr 1fr; gap: 40px; padding: 48px 0; border-top: 1px solid rgba(17,17,16,0.12); align-items: start;">
+        <span style="font-family: 'Cormorant Garamond', serif; font-size: 48px; font-weight: 300; color: rgba(17,17,16,0.15); line-height: 1;" data-count="4" data-pad="2">04</span>
+        <div>
+          <p style="font-size: 22px; font-weight: 400; margin-bottom: 12px; font-family: 'Cormorant Garamond', serif; letter-spacing: 0.02em;">Create With Intention</p>
+          <p style="font-size: 15px; line-height: 1.8; color: #555552; font-weight: 300;">Shape the life and the world you actually want to live in, deliberately and on your own terms.</p>
+        </div>
+        <div class="pillar-desc" style="padding-top: 4px;">
+          <p style="font-size: 14px; line-height: 1.8; color: #777775; font-weight: 300; font-style: italic;">Intentional creation is not wishful thinking. It is the disciplined practice of deciding what matters and moving toward it with full commitment.</p>
+        </div>
+      </div>
+
+      <div class="pillars-row" style="display: grid; grid-template-columns: 80px 1fr 1fr; gap: 40px; padding: 48px 0; border-top: 1px solid rgba(17,17,16,0.12); border-bottom: 1px solid rgba(17,17,16,0.12); align-items: start;">
+        <span style="font-family: 'Cormorant Garamond', serif; font-size: 48px; font-weight: 300; color: rgba(17,17,16,0.15); line-height: 1;" data-count="5" data-pad="2">05</span>
+        <div>
+          <p style="font-size: 22px; font-weight: 400; margin-bottom: 12px; font-family: 'Cormorant Garamond', serif; letter-spacing: 0.02em;">Practice Daily</p>
+          <p style="font-size: 15px; line-height: 1.8; color: #555552; font-weight: 300;">A simple, disciplined practice for creating meaningful change in your life and in the world around you.</p>
+        </div>
+        <div class="pillar-desc" style="padding-top: 4px;">
+          <p style="font-size: 14px; line-height: 1.8; color: #777775; font-weight: 300; font-style: italic;">Real change is not a single event. It is the accumulation of small, deliberate acts repeated over time with consistency and care.</p>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- FUTURE CONTENT SPACE -->
+<section style="background: #F7F5F0; padding: 100px 48px;">
+  <div style="max-width: 1100px; margin: 0 auto;">
+    <p style="font-size: 11px; letter-spacing: 0.22em; text-transform: uppercase; color: rgba(17,17,16,0.4); margin-bottom: 16px;">Coming Soon</p>
+    <h2 style="font-family: 'Cormorant Garamond', serif; font-size: clamp(36px, 5vw, 64px); font-weight: 300; line-height: 1.1; margin-bottom: 40px;">About the Method</h2>
+
+    <div style="
+      border: 1px dashed rgba(17,17,16,0.2);
+      padding: 80px 48px;
+      display: flex; flex-direction: column; align-items: center; justify-content: center;
+      text-align: center;
+      min-height: 240px;
+    ">
+      <p style="font-family: 'Cormorant Garamond', serif; font-size: 22px; font-style: italic; color: rgba(17,17,16,0.4); margin-bottom: 16px;">Full method description to be added here</p>
+      <p style="font-size: 13px; letter-spacing: 0.12em; color: rgba(17,17,16,0.3);">This space is reserved for Jonna's full explanation of the Power Reclamation Method.</p>
+    </div>
+  </div>
+</section>
+
+<!-- CTA -->
+<section style="background: #111110; padding: 100px 48px; text-align: center;">
+  <p style="font-size: 11px; letter-spacing: 0.22em; text-transform: uppercase; color: rgba(250,250,248,0.4); margin-bottom: 16px; font-family: 'Jost', sans-serif;">Ready to Begin</p>
+  <h2 style="font-family: 'Cormorant Garamond', serif; font-size: clamp(40px, 5vw, 72px); font-weight: 300; color: #FAFAF8; margin-bottom: 32px; line-height: 1.1;">Your transformation<br />starts here.</h2>
+  <div style="display: flex; gap: 20px; justify-content: center; flex-wrap: wrap;">
+    <a href="speaking.html" style="display: inline-block; background: #FAFAF8; color: #111110; font-size: 12px; letter-spacing: 0.18em; text-transform: uppercase; padding: 18px 44px; font-weight: 400; font-family: 'Jost', sans-serif;">Book a Speaking Event</a>
+    <a href="contact.html" style="display: inline-block; border: 1px solid rgba(250,250,248,0.4); color: #FAFAF8; font-size: 12px; letter-spacing: 0.18em; text-transform: uppercase; padding: 18px 44px; font-weight: 400; font-family: 'Jost', sans-serif;">Get in Touch</a>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer class="site-footer" style="background: #111110; color: rgba(250,250,248,0.5); padding: 48px; display: flex; align-items: center; justify-content: space-between; border-top: 1px solid rgba(250,250,248,0.08); font-family: 'Jost', sans-serif;">
+  <div>
+    <p style="font-family: 'Cormorant Garamond', serif; font-size: 20px; font-weight: 400; letter-spacing: 0.1em; text-transform: uppercase; color: #FAFAF8; margin-bottom: 6px;">Jonna Gill</p>
+    <p style="font-size: 12px; letter-spacing: 0.12em;">Speaker · Artist · Filmmaker</p>
+  </div>
+  <div class="footer-links" style="display: flex; gap: 32px;">
+    <a href="index.html" style="font-size: 12px; letter-spacing: 0.12em; text-transform: uppercase; color: rgba(250,250,248,0.5);">Home</a>
+    <a href="about.html" style="font-size: 12px; letter-spacing: 0.12em; text-transform: uppercase; color: rgba(250,250,248,0.5);">About</a>
+    <a href="speaking.html" style="font-size: 12px; letter-spacing: 0.12em; text-transform: uppercase; color: rgba(250,250,248,0.5);">Speaking</a>
+    <a href="community.html" style="font-size: 12px; letter-spacing: 0.12em; text-transform: uppercase; color: rgba(250,250,248,0.5);">Community</a>
+    <a href="contact.html" style="font-size: 12px; letter-spacing: 0.12em; text-transform: uppercase; color: rgba(250,250,248,0.5);">Contact</a>
+  </div>
+  <div style="text-align: right; font-size: 12px;">
+    <p style="letter-spacing: 0.1em;">www.meetjonnagill.com</p>
+    <p style="margin-top: 4px;">© 2026 Jonna Gill</p>
+  </div>
+</footer>
+<script>
+function fxInit() {
+  // Inject CSS
+  if (!document.getElementById('_fx')) {
+    const st = document.createElement('style');
+    st.id = '_fx';
+    const rules = [
+      '.fx-card{transition:transform .35s,box-shadow .35s}',
+      '.fx-card:hover{transform:translateY(-7px);box-shadow:0 16px 48px rgba(17,17,16,.1)}',
+      '.fx-btn{position:relative;overflow:hidden}',
+      '.fx-btn::after{content:"";position:absolute;inset:0;background:rgba(107,94,74,.14);transform:translateX(-101%);transition:transform .35s}',
+      '.fx-btn:hover::after{transform:translateX(0)}',
+      '.fx-btn-inv{position:relative;overflow:hidden}',
+      '.fx-btn-inv::after{content:"";position:absolute;inset:0;background:rgba(250,250,248,.1);transform:translateX(-101%);transition:transform .35s}',
+      '.fx-btn-inv:hover::after{transform:translateX(0)}',
+      '@keyframes fx-float{0%,100%{transform:translateX(-50%) translateY(0);opacity:.4}50%{transform:translateX(-50%) translateY(10px);opacity:.8}}',
+      '.fx-float{animation:fx-float 2.6s ease-in-out infinite}',
+      '@keyframes fx-blink{0%,100%{opacity:1}50%{opacity:0}}',
+    ];
+    st.textContent = rules.join('\n');
+    document.head.appendChild(st);
+  }
+
+  // Reveal
+  const revEls = [...document.querySelectorAll('.fx-reveal')];
+  revEls.forEach(el => {
+    el.style.opacity = '0';
+    const dir = el.dataset.dir || 'up';
+    if (dir === 'up')    el.style.transform = 'translateY(40px)';
+    if (dir === 'left')  el.style.transform = 'translateX(-40px)';
+    if (dir === 'right') el.style.transform = 'translateX(40px)';
+    el.style.transition = 'opacity .9s cubic-bezier(.22,.68,0,1.1),transform .9s cubic-bezier(.22,.68,0,1.1)';
+    el.style.transitionDelay = (el.dataset.delay || '0') + 'ms';
+  });
+  const io = new IntersectionObserver(entries => {
+    entries.forEach(e => {
+      if (!e.isIntersecting) return;
+      e.target.style.opacity = '1';
+      e.target.style.transform = 'translate(0,0)';
+      io.unobserve(e.target);
+    });
+  }, { threshold: 0.1 });
+  revEls.forEach(el => io.observe(el));
+
+  // Stagger
+  document.querySelectorAll('.fx-stagger').forEach(parent => {
+    [...parent.children].forEach((child, i) => {
+      child.style.opacity = '0';
+      child.style.transform = 'translateY(30px)';
+      child.style.transition = 'opacity .75s cubic-bezier(.22,.68,0,1.1),transform .75s cubic-bezier(.22,.68,0,1.1)';
+      child.style.transitionDelay = (i * 120) + 'ms';
+      io.observe(child);
+    });
+  });
+
+  // Parallax
+  const pImgs = [...document.querySelectorAll('.fx-parallax')];
+  pImgs.forEach(img => {
+    Object.assign(img.style, { height:'150%', width:'100%', top:'-25%', left:'0', position:'absolute', objectFit:'cover', willChange:'transform' });
+  });
+  let ticking = false;
+  const updateP = () => {
+    pImgs.forEach(img => {
+      const r = img.parentElement.getBoundingClientRect();
+      const prog = (window.innerHeight / 2 - (r.top + r.height / 2)) / window.innerHeight;
+      img.style.transform = 'translateY(' + (prog * 0.25 * 320) + 'px)';
+    });
+    ticking = false;
+  };
+  if (pImgs.length) {
+    window.addEventListener('scroll', () => { if (!ticking) { requestAnimationFrame(updateP); ticking = true; } }, { passive: true });
+    updateP();
+  }
+
+  // Typewriter
+  document.querySelectorAll('[data-typewriter]').forEach(el => {
+    const text = el.textContent;
+    el.textContent = '';
+    const cursor = document.createElement('span');
+    cursor.textContent = '|';
+    cursor.style.cssText = 'animation:fx-blink .8s ease-in-out infinite;margin-left:1px';
+    el.appendChild(cursor);
+    let i = 0;
+    const delay = parseInt(el.dataset.twDelay || '700');
+    setTimeout(function type() {
+      if (i < text.length) { cursor.before(text[i++]); setTimeout(type, 55); }
+      else setTimeout(() => cursor.remove(), 900);
+    }, delay);
+  });
+
+  // Count-up
+  const cio = new IntersectionObserver(entries => {
+    entries.forEach(e => {
+      if (!e.isIntersecting) return;
+      const el = e.target;
+      const target = parseInt(el.dataset.count);
+      const pad = parseInt(el.dataset.pad || '2');
+      let i = 0;
+      const step = Math.max(1200 / target, 40);
+      const t = setInterval(() => {
+        i++;
+        el.textContent = String(i).padStart(pad, '0');
+        if (i >= target) clearInterval(t);
+      }, step);
+      cio.unobserve(el);
+    });
+  }, { threshold: 0.5 });
+  document.querySelectorAll('[data-count]').forEach(el => { el.textContent = '00'; cio.observe(el); });
+
+  // Nav shadow
+  const nav = document.getElementById('site-nav');
+  if (nav) {
+    window.addEventListener('scroll', () => {
+      nav.style.boxShadow = window.scrollY > 20 ? '0 2px 24px rgba(17,17,16,.07)' : 'none';
+    }, { passive: true });
+  }
+}
+
+
+const _btn=document.getElementById('nav-hamburger'),_links=document.querySelector('.nav-links'),_h1=document.getElementById('hb1'),_h2=document.getElementById('hb2'),_h3=document.getElementById('hb3');
+if(_btn&&_links){let _o=false;_btn.addEventListener('click',()=>{_o=!_o;_links.classList.toggle('open',_o);if(_o){_h1.style.transform='translateY(6.5px) rotate(45deg)';_h2.style.opacity='0';_h3.style.transform='translateY(-6.5px) rotate(-45deg)';}else{_h1.style.transform='';_h2.style.opacity='1';_h3.style.transform='';}});_links.querySelectorAll('a').forEach(a=>a.addEventListener('click',()=>{_o=false;_links.classList.remove('open');_h1.style.transform='';_h2.style.opacity='1';_h3.style.transform='';}));}
+
+document.addEventListener('DOMContentLoaded', function() {
+  fxInit();
+  
+});
+</script>
+</body>
+</html>
