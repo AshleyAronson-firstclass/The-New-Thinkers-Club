@@ -4,7 +4,16 @@
 <meta charset="utf-8">
 <title>The New Thinkers Club — Jonna Gill</title>
   <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="anonymous" />
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;1,300;1,400&family=Jost:wght@300;400;500&display=swap" rel="stylesheet" />
   <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    body { background: #FDFCF9; color: #2C2C2A; font-family: 'Jost', sans-serif; font-weight: 300; -webkit-font-smoothing: antialiased; }
+    a { color: #2C2C2A; text-decoration: none; }
+    a:hover { color: #6B5E4A; }
+  </style>
+<style>
 /* ── Responsive overrides ── */
 
 /* Nav mobile */
@@ -151,50 +160,43 @@
   body { font-size: 15px; }
 }
 
+*,*::before,*::after{box-sizing:border-box}body{margin:0}a{color:#2C2C2A;text-decoration:none;}a:hover{color:#B8924A;}
 </style>
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="anonymous" />
-  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;1,300;1,400&family=Jost:wght@300;400;500&display=swap" rel="stylesheet" />
-  <style>
-    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
-    body { background: #FAFAF8; color: #111110; font-family: 'Jost', sans-serif; font-weight: 300; -webkit-font-smoothing: antialiased; }
-    a { color: #111110; text-decoration: none; }
-    a:hover { color: #6B5E4A; }
-  </style>
 </head>
 <body>
-<nav style="position:fixed;top:0;left:0;right:0;z-index:100;background:#FAFAF8;border-bottom:1px solid rgba(17,17,16,0.1);display:flex;align-items:center;justify-content:space-between;padding:0 48px;height:68px;font-family:'Jost',sans-serif;" id="site-nav">
-  <a href="index.html" style="font-family:'Cormorant Garamond',serif;font-size:22px;font-weight:500;letter-spacing:0.12em;text-transform:uppercase;color:#111110;">Jonna Gill</a>
+<nav style="position:fixed;top:0;left:0;right:0;z-index:100;background:#FDFCF9;border-bottom:1px solid rgba(184,146,74,0.2);display:flex;align-items:center;justify-content:space-between;padding:0 48px;height:68px;font-family:'Jost',sans-serif;" id="site-nav">
+  <a href="index.html" style="font-family:'Cormorant Garamond',serif;font-size:20px;font-weight:400;letter-spacing:0.1em;text-transform:uppercase;color:#2C2C2A;text-decoration:none;">Meet Jonna Gill</a>
   <div class="nav-links" style="display:flex;gap:40px;align-items:center;">
-    <a href="about.html" style="font-size:12px;letter-spacing:0.14em;text-transform:uppercase;font-weight:400;border-bottom:none;padding-bottom:2px;">About</a>
-    <a href="speaking.html" style="font-size:12px;letter-spacing:0.14em;text-transform:uppercase;font-weight:400;border-bottom:none;padding-bottom:2px;">Speaking</a>
-    <a href="method.html" style="font-size:12px;letter-spacing:0.14em;text-transform:uppercase;font-weight:400;border-bottom:none;padding-bottom:2px;">The Method</a>
-    <a href="community.html" style="font-size:12px;letter-spacing:0.14em;text-transform:uppercase;font-weight:400;border-bottom:1px solid #111110;padding-bottom:2px;">Community</a>
-    <a href="contact.html" style="font-size:12px;letter-spacing:0.14em;text-transform:uppercase;font-weight:400;border:1px solid #111110;padding:10px 22px;">Contact</a>
+    <a href="about.html" style="font-size:12px;letter-spacing:0.14em;text-transform:uppercase;font-weight:400;border-bottom:none;padding-bottom:2px;color:#2C2C2A;text-decoration:none;">About</a>
+    <a href="speaking.html" style="font-size:12px;letter-spacing:0.14em;text-transform:uppercase;font-weight:400;border-bottom:none;padding-bottom:2px;color:#2C2C2A;text-decoration:none;">Speaking</a>
+    <a href="method.html" style="font-size:12px;letter-spacing:0.14em;text-transform:uppercase;font-weight:400;border-bottom:none;padding-bottom:2px;color:#2C2C2A;text-decoration:none;">The Method</a>
+    <a href="community.html" style="font-size:12px;letter-spacing:0.14em;text-transform:uppercase;font-weight:400;border-bottom:1px solid #B8924A;padding-bottom:2px;color:#2C2C2A;text-decoration:none;">Community</a>
+    <a href="contact.html" style="font-size:12px;letter-spacing:0.14em;text-transform:uppercase;font-weight:400;background:#B8924A;color:#FDFCF9;padding:10px 22px;text-decoration:none;">Contact</a>
   </div>
   <button class="nav-hamburger" id="nav-hamburger" style="display:none;flex-direction:column;gap:5px;background:none;border:none;cursor:pointer;padding:8px;" aria-label="Menu">
-    <span id="hb1" style="display:block;width:24px;height:1.5px;background:#111110;transition:transform 0.3s,opacity 0.3s;"></span>
-    <span id="hb2" style="display:block;width:24px;height:1.5px;background:#111110;transition:transform 0.3s,opacity 0.3s;"></span>
-    <span id="hb3" style="display:block;width:24px;height:1.5px;background:#111110;transition:transform 0.3s,opacity 0.3s;"></span>
+    <span id="hb1" style="display:block;width:24px;height:1.5px;background:#2C2C2A;transition:transform 0.3s,opacity 0.3s;"></span>
+    <span id="hb2" style="display:block;width:24px;height:1.5px;background:#2C2C2A;transition:transform 0.3s,opacity 0.3s;"></span>
+    <span id="hb3" style="display:block;width:24px;height:1.5px;background:#2C2C2A;transition:transform 0.3s,opacity 0.3s;"></span>
   </button>
 </nav>
-
 <!-- PAGE HEADER -->
-<section class="page-header" style="background: #FAFAF8; padding: 148px 48px 80px; border-bottom: 1px solid rgba(17,17,16,0.08);">
-  <div style="max-width: 1100px; margin: 0 auto;">
-    <p style="font-size: 11px; letter-spacing: 0.22em; text-transform: uppercase; color: rgba(17,17,16,0.4); margin-bottom: 16px;">Community</p>
-    <h1 class="fx-reveal" data-dir="up" style="font-family: 'Cormorant Garamond', serif; font-size: clamp(56px, 8vw, 120px); font-weight: 300; line-height: 0.9; letter-spacing: 0.02em;">The New<br />Thinkers Club</h1>
-    <p style="font-family: 'Cormorant Garamond', serif; font-size: 24px; font-style: italic; font-weight: 300; color: #555552; margin-top: 28px;">This is where the community meets.</p>
+<section class="page-header" style="background: linear-gradient(105deg, #C8A45A 0%, #DEC07A 25%, #EDD89A 50%, #F5EDCC 70%, #FDFCF9 100%); padding: 100px 72px 80px; min-height: 380px; display: flex; align-items: center; position: relative; overflow: hidden;">
+  <div style="position: absolute; inset: 0; opacity: 0.04; background-image: radial-gradient(#8A6A30 1px, transparent 1px); background-size: 24px 24px; pointer-events: none;"></div>
+  <div style="max-width: 1100px; margin: 0 auto; width: 100%;">
+    <p style="font-size: 11px; letter-spacing: 0.24em; text-transform: uppercase; color: #7A5A20; margin-bottom: 16px; font-family: 'Jost', sans-serif;">Community</p>
+    <div style="width: 40px; height: 1px; background: #B8924A; margin-bottom: 28px;"></div>
+    <h1 style="font-family: 'Cormorant Garamond', serif; font-size: clamp(48px, 7vw, 96px); font-weight: 300; line-height: 0.95; letter-spacing: 0.02em; color: #2C2C2A; margin-bottom: 24px;">The New<br />Thinkers Club</h1>
+    <p style="font-size: 17px; line-height: 1.8; color: #4A3A20; font-weight: 300; max-width: 560px;">This is where the community meets.</p>
   </div>
 </section>
 
 <!-- INTRO -->
-<section style="background: #FAFAF8; padding: 80px 48px 100px;">
+<section style="background: #FDFCF9; padding: 80px 48px 100px;">
   <div class="grid-2col" style="max-width: 1100px; margin: 0 auto; display: grid; grid-template-columns: 1fr 1fr; gap: 80px;">
     <p style="font-size: 20px; line-height: 1.85; color: #2A2A28; font-weight: 300;">
       The New Thinkers Club is a gathering place for people who are done waiting for permission. If you believe that individuals, not systems, are the engine of real change, you belong here. This is a community of practice, reflection, and mutual accountability.
     </p>
-    <p style="font-size: 16px; line-height: 1.85; color: #555552; font-weight: 300; padding-top: 6px;">
+    <p style="font-size: 16px; line-height: 1.85; color: #555550; font-weight: 300; padding-top: 6px;">
       We are not interested in passive consumption. We are interested in people who are willing to do the work, inside and out, and who want to be surrounded by others doing the same. The New Thinkers Club is a place to think more clearly, act more deliberately, and build the life you actually want to live.
     </p>
   </div>
@@ -203,189 +205,76 @@
 <!-- THREE PILLARS -->
 <section style="background: #FFFFFF; padding: 100px 48px;">
   <div style="max-width: 1100px; margin: 0 auto;">
-    <p style="font-size: 11px; letter-spacing: 0.22em; text-transform: uppercase; color: rgba(17,17,16,0.4); margin-bottom: 56px;">What We Stand For</p>
+    <p style="font-size: 11px; letter-spacing: 0.22em; text-transform: uppercase; color: rgba(44,44,42,0.4); margin-bottom: 56px;">What We Stand For</p>
     <div class="fx-stagger grid-3col" style="display: grid; grid-template-columns: repeat(3, 1fr); gap: 2px;">
-      <div style="background: #F7F5F0; padding: 56px 44px;">
-        <div style="width: 32px; height: 1px; background: #111110; margin-bottom: 28px;"></div>
+      <div style="background: #F8F4EF; padding: 56px 44px;">
+        <div style="width: 32px; height: 1px; background: #F5EDCC; margin-bottom: 28px;"></div>
         <p style="font-family: 'Cormorant Garamond', serif; font-size: 30px; font-weight: 400; line-height: 1.2; margin-bottom: 20px;">Think<br />Differently</p>
-        <p style="font-size: 14px; line-height: 1.8; color: #555552; font-weight: 300;">Challenge assumptions. Question inherited narratives. Develop the courage to see clearly and to say what you see.</p>
+        <p style="font-size: 14px; line-height: 1.8; color: #555550; font-weight: 300;">Challenge assumptions. Question inherited narratives. Develop the courage to see clearly and to say what you see.</p>
       </div>
-      <div style="background: #F7F5F0; padding: 56px 44px;">
-        <div style="width: 32px; height: 1px; background: #111110; margin-bottom: 28px;"></div>
+      <div style="background: #F8F4EF; padding: 56px 44px;">
+        <div style="width: 32px; height: 1px; background: #F5EDCC; margin-bottom: 28px;"></div>
         <p style="font-family: 'Cormorant Garamond', serif; font-size: 30px; font-weight: 400; line-height: 1.2; margin-bottom: 20px;">Act<br />Intentionally</p>
-        <p style="font-size: 14px; line-height: 1.8; color: #555552; font-weight: 300;">Move from insight to committed, disciplined practice that creates visible change in your life and in your community.</p>
+        <p style="font-size: 14px; line-height: 1.8; color: #555550; font-weight: 300;">Move from insight to committed, disciplined practice that creates visible change in your life and in your community.</p>
       </div>
-      <div style="background: #F7F5F0; padding: 56px 44px;">
-        <div style="width: 32px; height: 1px; background: #111110; margin-bottom: 28px;"></div>
+      <div style="background: #F8F4EF; padding: 56px 44px;">
+        <div style="width: 32px; height: 1px; background: #F5EDCC; margin-bottom: 28px;"></div>
         <p style="font-family: 'Cormorant Garamond', serif; font-size: 30px; font-weight: 400; line-height: 1.2; margin-bottom: 20px;">Build<br />Together</p>
-        <p style="font-size: 14px; line-height: 1.8; color: #555552; font-weight: 300;">Join a community of people shaping the world they want to live in, starting from within, and supporting each other along the way.</p>
+        <p style="font-size: 14px; line-height: 1.8; color: #555550; font-weight: 300;">Join a community of people shaping the world they want to live in, starting from within, and supporting each other along the way.</p>
       </div>
     </div>
   </div>
 </section>
 
 <!-- MANIFESTO QUOTE -->
-<section style="background: #F2EDE4; padding: 100px 48px; text-align: center;">
+<section style="background: #F9F0ED; padding: 100px 48px; text-align: center;">
   <div style="max-width: 800px; margin: 0 auto;">
-    <p style="font-family: 'Cormorant Garamond', serif; font-size: clamp(28px, 4vw, 52px); font-weight: 300; font-style: italic; line-height: 1.45; color: #111110; margin-bottom: 32px;">
+    <p style="font-family: 'Cormorant Garamond', serif; font-size: clamp(28px, 4vw, 52px); font-weight: 300; font-style: italic; line-height: 1.45; color: #2C2C2A; margin-bottom: 32px;">
       We are often taught that power exists somewhere outside ourselves. This community exists to prove otherwise.
     </p>
-    <div style="width: 48px; height: 1px; background: rgba(17,17,16,0.3); margin: 0 auto;"></div>
+    <div style="width: 48px; height: 1px; background: rgba(44,44,42,0.3); margin: 0 auto;"></div>
   </div>
 </section>
 
 <!-- JOIN CTA -->
-<section style="background: #111110; padding: 100px 48px; text-align: center;">
-  <p style="font-size: 11px; letter-spacing: 0.22em; text-transform: uppercase; color: rgba(250,250,248,0.4); margin-bottom: 20px; font-family: 'Jost', sans-serif;">Join Us</p>
-  <h2 style="font-family: 'Cormorant Garamond', serif; font-size: clamp(40px, 5vw, 72px); font-weight: 300; color: #FAFAF8; margin-bottom: 20px; line-height: 1.1;">You belong here.</h2>
-  <p style="font-size: 16px; line-height: 1.8; color: rgba(250,250,248,0.6); margin-bottom: 44px; font-family: 'Jost', sans-serif; font-weight: 300; max-width: 460px; margin-left: auto; margin-right: auto;">The New Thinkers Club is open to anyone ready to do the work. Reach out to learn more about how to get involved.</p>
-  <a href="contact.html" class="fx-btn-inv" style="display: inline-block; background: #FAFAF8; color: #111110; font-size: 12px; letter-spacing: 0.18em; text-transform: uppercase; padding: 18px 48px; font-weight: 400; font-family: 'Jost', sans-serif;">Get Involved</a>
+<section style="background: #F5EDCC; padding: 100px 48px; text-align: center;">
+  <p style="font-size: 11px; letter-spacing: 0.22em; text-transform: uppercase; color: rgba(44,44,42,0.4); margin-bottom: 20px; font-family: 'Jost', sans-serif;">Join Us</p>
+  <h2 style="font-family: 'Cormorant Garamond', serif; font-size: clamp(40px, 5vw, 72px); font-weight: 300; color: #2C2C2A; margin-bottom: 20px; line-height: 1.1;">You belong here.</h2>
+  <p style="font-size: 16px; line-height: 1.8; color: #555550; margin-bottom: 44px; font-family: 'Jost', sans-serif; font-weight: 300; max-width: 460px; margin-left: auto; margin-right: auto;">The New Thinkers Club is open to anyone ready to do the work. Reach out to learn more about how to get involved.</p>
+  <a href="contact.html" class="fx-btn-inv" style="display: inline-block; background: #FDFCF9; color: #2C2C2A; font-size: 12px; letter-spacing: 0.18em; text-transform: uppercase; padding: 18px 48px; font-weight: 400; font-family: 'Jost', sans-serif;">Get Involved</a>
 </section>
 
 <!-- FOOTER -->
-<footer class="site-footer" style="background: #111110; color: rgba(250,250,248,0.5); padding: 48px; display: flex; align-items: center; justify-content: space-between; border-top: 1px solid rgba(250,250,248,0.08); font-family: 'Jost', sans-serif;">
+<footer class="site-footer" style="background: #FDFCF9; color: #6A5A50; padding: 48px; display: flex; align-items: center; justify-content: space-between; border-top: 1px solid rgba(250,250,248,0.08); font-family: 'Jost', sans-serif;">
   <div>
-    <p style="font-family: 'Cormorant Garamond', serif; font-size: 20px; font-weight: 400; letter-spacing: 0.1em; text-transform: uppercase; color: #FAFAF8; margin-bottom: 6px;">Jonna Gill</p>
-    <p style="font-size: 12px; letter-spacing: 0.12em;">Speaker · Artist · Filmmaker</p>
+    <p style="font-family: 'Cormorant Garamond', serif; font-size: 20px; font-weight: 400; letter-spacing: 0.1em; text-transform: uppercase; color: #2C2C2A; margin-bottom: 6px;">Meet Jonna Gill</p>
+    <p style="font-size: 12px; letter-spacing: 0.12em; color: #B8924A;">Speaker · Artist · Filmmaker</p>
   </div>
   <div class="footer-links" style="display: flex; gap: 32px;">
-    <a href="index.html" style="font-size: 12px; letter-spacing: 0.12em; text-transform: uppercase; color: rgba(250,250,248,0.5);">Home</a>
-    <a href="about.html" style="font-size: 12px; letter-spacing: 0.12em; text-transform: uppercase; color: rgba(250,250,248,0.5);">About</a>
-    <a href="method.html" style="font-size: 12px; letter-spacing: 0.12em; text-transform: uppercase; color: rgba(250,250,248,0.5);">The Method</a>
-    <a href="speaking.html" style="font-size: 12px; letter-spacing: 0.12em; text-transform: uppercase; color: rgba(250,250,248,0.5);">Speaking</a>
-    <a href="contact.html" style="font-size: 12px; letter-spacing: 0.12em; text-transform: uppercase; color: rgba(250,250,248,0.5);">Contact</a>
+    <a href="index.html" style="font-size: 12px; letter-spacing: 0.12em; text-transform: uppercase; color: #6A5A50;">Home</a>
+    <a href="about.html" style="font-size: 12px; letter-spacing: 0.12em; text-transform: uppercase; color: #6A5A50;">About</a>
+    <a href="method.html" style="font-size: 12px; letter-spacing: 0.12em; text-transform: uppercase; color: #6A5A50;">The Method</a>
+    <a href="speaking.html" style="font-size: 12px; letter-spacing: 0.12em; text-transform: uppercase; color: #6A5A50;">Speaking</a>
+    <a href="contact.html" style="font-size: 12px; letter-spacing: 0.12em; text-transform: uppercase; color: #6A5A50;">Contact</a>
   </div>
   <div style="text-align: right; font-size: 12px;">
     <p style="letter-spacing: 0.1em;">www.meetjonnagill.com</p>
-    <p style="margin-top: 4px;">© 2026 Jonna Gill</p>
+    <p style="margin-top: 4px;" style="color:#9A8070">© 2026 Jonna Gill</p>
   </div>
 </footer>
 <script>
-function fxInit() {
-  // Inject CSS
-  if (!document.getElementById('_fx')) {
-    const st = document.createElement('style');
-    st.id = '_fx';
-    const rules = [
-      '.fx-card{transition:transform .35s,box-shadow .35s}',
-      '.fx-card:hover{transform:translateY(-7px);box-shadow:0 16px 48px rgba(17,17,16,.1)}',
-      '.fx-btn{position:relative;overflow:hidden}',
-      '.fx-btn::after{content:"";position:absolute;inset:0;background:rgba(107,94,74,.14);transform:translateX(-101%);transition:transform .35s}',
-      '.fx-btn:hover::after{transform:translateX(0)}',
-      '.fx-btn-inv{position:relative;overflow:hidden}',
-      '.fx-btn-inv::after{content:"";position:absolute;inset:0;background:rgba(250,250,248,.1);transform:translateX(-101%);transition:transform .35s}',
-      '.fx-btn-inv:hover::after{transform:translateX(0)}',
-      '@keyframes fx-float{0%,100%{transform:translateX(-50%) translateY(0);opacity:.4}50%{transform:translateX(-50%) translateY(10px);opacity:.8}}',
-      '.fx-float{animation:fx-float 2.6s ease-in-out infinite}',
-      '@keyframes fx-blink{0%,100%{opacity:1}50%{opacity:0}}',
-    ];
-    st.textContent = rules.join('\n');
-    document.head.appendChild(st);
-  }
-
-  // Reveal
-  const revEls = [...document.querySelectorAll('.fx-reveal')];
-  revEls.forEach(el => {
-    el.style.opacity = '0';
-    const dir = el.dataset.dir || 'up';
-    if (dir === 'up')    el.style.transform = 'translateY(40px)';
-    if (dir === 'left')  el.style.transform = 'translateX(-40px)';
-    if (dir === 'right') el.style.transform = 'translateX(40px)';
-    el.style.transition = 'opacity .9s cubic-bezier(.22,.68,0,1.1),transform .9s cubic-bezier(.22,.68,0,1.1)';
-    el.style.transitionDelay = (el.dataset.delay || '0') + 'ms';
-  });
-  const io = new IntersectionObserver(entries => {
-    entries.forEach(e => {
-      if (!e.isIntersecting) return;
-      e.target.style.opacity = '1';
-      e.target.style.transform = 'translate(0,0)';
-      io.unobserve(e.target);
-    });
-  }, { threshold: 0.1 });
-  revEls.forEach(el => io.observe(el));
-
-  // Stagger
-  document.querySelectorAll('.fx-stagger').forEach(parent => {
-    [...parent.children].forEach((child, i) => {
-      child.style.opacity = '0';
-      child.style.transform = 'translateY(30px)';
-      child.style.transition = 'opacity .75s cubic-bezier(.22,.68,0,1.1),transform .75s cubic-bezier(.22,.68,0,1.1)';
-      child.style.transitionDelay = (i * 120) + 'ms';
-      io.observe(child);
-    });
-  });
-
-  // Parallax
-  const pImgs = [...document.querySelectorAll('.fx-parallax')];
-  pImgs.forEach(img => {
-    Object.assign(img.style, { height:'150%', width:'100%', top:'-25%', left:'0', position:'absolute', objectFit:'cover', willChange:'transform' });
-  });
-  let ticking = false;
-  const updateP = () => {
-    pImgs.forEach(img => {
-      const r = img.parentElement.getBoundingClientRect();
-      const prog = (window.innerHeight / 2 - (r.top + r.height / 2)) / window.innerHeight;
-      img.style.transform = 'translateY(' + (prog * 0.25 * 320) + 'px)';
-    });
-    ticking = false;
-  };
-  if (pImgs.length) {
-    window.addEventListener('scroll', () => { if (!ticking) { requestAnimationFrame(updateP); ticking = true; } }, { passive: true });
-    updateP();
-  }
-
-  // Typewriter
-  document.querySelectorAll('[data-typewriter]').forEach(el => {
-    const text = el.textContent;
-    el.textContent = '';
-    const cursor = document.createElement('span');
-    cursor.textContent = '|';
-    cursor.style.cssText = 'animation:fx-blink .8s ease-in-out infinite;margin-left:1px';
-    el.appendChild(cursor);
-    let i = 0;
-    const delay = parseInt(el.dataset.twDelay || '700');
-    setTimeout(function type() {
-      if (i < text.length) { cursor.before(text[i++]); setTimeout(type, 55); }
-      else setTimeout(() => cursor.remove(), 900);
-    }, delay);
-  });
-
-  // Count-up
-  const cio = new IntersectionObserver(entries => {
-    entries.forEach(e => {
-      if (!e.isIntersecting) return;
-      const el = e.target;
-      const target = parseInt(el.dataset.count);
-      const pad = parseInt(el.dataset.pad || '2');
-      let i = 0;
-      const step = Math.max(1200 / target, 40);
-      const t = setInterval(() => {
-        i++;
-        el.textContent = String(i).padStart(pad, '0');
-        if (i >= target) clearInterval(t);
-      }, step);
-      cio.unobserve(el);
-    });
-  }, { threshold: 0.5 });
-  document.querySelectorAll('[data-count]').forEach(el => { el.textContent = '00'; cio.observe(el); });
-
-  // Nav shadow
-  const nav = document.getElementById('site-nav');
-  if (nav) {
-    window.addEventListener('scroll', () => {
-      nav.style.boxShadow = window.scrollY > 20 ? '0 2px 24px rgba(17,17,16,.07)' : 'none';
-    }, { passive: true });
-  }
-}
-
-
-const _btn=document.getElementById('nav-hamburger'),_links=document.querySelector('.nav-links'),_h1=document.getElementById('hb1'),_h2=document.getElementById('hb2'),_h3=document.getElementById('hb3');
-if(_btn&&_links){let _o=false;_btn.addEventListener('click',()=>{_o=!_o;_links.classList.toggle('open',_o);if(_o){_h1.style.transform='translateY(6.5px) rotate(45deg)';_h2.style.opacity='0';_h3.style.transform='translateY(-6.5px) rotate(-45deg)';}else{_h1.style.transform='';_h2.style.opacity='1';_h3.style.transform='';}});_links.querySelectorAll('a').forEach(a=>a.addEventListener('click',()=>{_o=false;_links.classList.remove('open');_h1.style.transform='';_h2.style.opacity='1';_h3.style.transform='';}));}
-
-document.addEventListener('DOMContentLoaded', function() {
-  fxInit();
-  
-});
+(function(){
+  var btn=document.getElementById('nav-hamburger'),links=document.querySelector('.nav-links'),h1=document.getElementById('hb1'),h2=document.getElementById('hb2'),h3=document.getElementById('hb3');
+  if(btn&&links){var o=false;btn.addEventListener('click',function(){o=!o;links.classList.toggle('open',o);if(o){h1.style.transform='translateY(6.5px) rotate(45deg)';h2.style.opacity='0';h3.style.transform='translateY(-6.5px) rotate(-45deg)';}else{h1.style.transform='';h2.style.opacity='1';h3.style.transform='';}});links.querySelectorAll('a').forEach(function(a){a.addEventListener('click',function(){o=false;links.classList.remove('open');h1.style.transform='';h2.style.opacity='1';h3.style.transform='';});});}
+  var els=document.querySelectorAll('.fx-reveal');
+  els.forEach(function(el){el.style.opacity='0';var d=el.dataset.dir||'up';if(d==='up')el.style.transform='translateY(36px)';if(d==='left')el.style.transform='translateX(-36px)';if(d==='right')el.style.transform='translateX(36px)';el.style.transition='opacity .9s cubic-bezier(.22,.68,0,1.1),transform .9s cubic-bezier(.22,.68,0,1.1)';el.style.transitionDelay=(el.dataset.delay||'0')+'ms';});
+  var io=new IntersectionObserver(function(entries){entries.forEach(function(e){if(e.isIntersecting){e.target.style.opacity='1';e.target.style.transform='translate(0,0)';io.unobserve(e.target);}});},{threshold:0.1});
+  els.forEach(function(el){io.observe(el);});
+  document.querySelectorAll('.fx-stagger').forEach(function(p){Array.from(p.children).forEach(function(c,i){c.style.opacity='0';c.style.transform='translateY(28px)';c.style.transition='opacity .75s cubic-bezier(.22,.68,0,1.1),transform .75s cubic-bezier(.22,.68,0,1.1)';c.style.transitionDelay=(i*120)+'ms';io.observe(c);});});
+  var nav=document.getElementById('site-nav');
+  if(nav)window.addEventListener('scroll',function(){nav.style.boxShadow=window.scrollY>20?'0 2px 24px rgba(44,44,42,.07)':'none';},{passive:true});
+  if(!document.getElementById('_fx')){var st=document.createElement('style');st.id='_fx';st.textContent='.fx-card{transition:transform .35s,box-shadow .35s}.fx-card:hover{transform:translateY(-7px);box-shadow:0 16px 48px rgba(44,44,42,.1)}.gold-btn{background:#B8924A;color:#FDFCF9;font-size:12px;letter-spacing:.18em;text-transform:uppercase;padding:16px 40px;font-weight:400;display:inline-block;transition:background .3s;text-decoration:none}.gold-btn:hover{background:#9A7A3A;color:#FDFCF9}.outline-btn{border:1px solid #B8924A;color:#B8924A;font-size:12px;letter-spacing:.18em;text-transform:uppercase;padding:16px 40px;font-weight:400;display:inline-block;transition:all .3s;text-decoration:none}.outline-btn:hover{background:#B8924A;color:#FDFCF9}.gold-line{height:1px;background:#B8924A;opacity:.5}.section-label{font-size:11px;letter-spacing:.24em;text-transform:uppercase;color:#B8924A;margin-bottom:16px}';document.head.appendChild(st);}
+})();
 </script>
 </body>
 </html>
