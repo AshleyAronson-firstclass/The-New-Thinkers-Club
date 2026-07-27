@@ -160,7 +160,7 @@
   body { font-size: 15px; }
 }
 
-*,*::before,*::after{box-sizing:border-box}body{margin:0}a{color:#2C2C2A;text-decoration:none;}a:hover{color:#B8924A;}
+*,*::before,*::after{box-sizing:border-box}body{margin:0}a{color:#2C2C2A;text-decoration:none}a:hover{color:#B8924A}
 </style>
 </head>
 <body>
@@ -174,9 +174,9 @@
     <a href="contact.html" style="font-size:12px;letter-spacing:0.14em;text-transform:uppercase;font-weight:400;background:#B8924A;color:#FDFCF9;padding:10px 22px;text-decoration:none;">Contact</a>
   </div>
   <button class="nav-hamburger" id="nav-hamburger" style="display:none;flex-direction:column;gap:5px;background:none;border:none;cursor:pointer;padding:8px;" aria-label="Menu">
-    <span id="hb1" style="display:block;width:24px;height:1.5px;background:#2C2C2A;transition:transform 0.3s,opacity 0.3s;"></span>
-    <span id="hb2" style="display:block;width:24px;height:1.5px;background:#2C2C2A;transition:transform 0.3s,opacity 0.3s;"></span>
-    <span id="hb3" style="display:block;width:24px;height:1.5px;background:#2C2C2A;transition:transform 0.3s,opacity 0.3s;"></span>
+    <span id="hb1" style="display:block;width:24px;height:1.5px;background:#2C2C2A;transition:transform .3s,opacity .3s;"></span>
+    <span id="hb2" style="display:block;width:24px;height:1.5px;background:#2C2C2A;transition:transform .3s,opacity .3s;"></span>
+    <span id="hb3" style="display:block;width:24px;height:1.5px;background:#2C2C2A;transition:transform .3s,opacity .3s;"></span>
   </button>
 </nav>
 <!-- PAGE HEADER -->
@@ -270,7 +270,12 @@
   els.forEach(function(el){el.style.opacity='0';var d=el.dataset.dir||'up';if(d==='up')el.style.transform='translateY(36px)';if(d==='left')el.style.transform='translateX(-36px)';if(d==='right')el.style.transform='translateX(36px)';el.style.transition='opacity .9s cubic-bezier(.22,.68,0,1.1),transform .9s cubic-bezier(.22,.68,0,1.1)';el.style.transitionDelay=(el.dataset.delay||'0')+'ms';});
   var io=new IntersectionObserver(function(entries){entries.forEach(function(e){if(e.isIntersecting){e.target.style.opacity='1';e.target.style.transform='translate(0,0)';io.unobserve(e.target);}});},{threshold:0.1});
   els.forEach(function(el){io.observe(el);});
-  document.querySelectorAll('.fx-stagger').forEach(function(p){Array.from(p.children).forEach(function(c,i){c.style.opacity='0';c.style.transform='translateY(28px)';c.style.transition='opacity .75s cubic-bezier(.22,.68,0,1.1),transform .75s cubic-bezier(.22,.68,0,1.1)';c.style.transitionDelay=(i*120)+'ms';io.observe(c);});});
+  document.querySelectorAll('.fx-stagger').forEach(function(p){Array.prototype.slice.call(p.children).forEach(function(c,i){c.style.opacity='0';c.style.transform='translateY(28px)';c.style.transition='opacity .75s cubic-bezier(.22,.68,0,1.1),transform .75s cubic-bezier(.22,.68,0,1.1)';c.style.transitionDelay=(i*120)+'ms';io.observe(c);});});
+  var pImgs=document.querySelectorAll('.fx-parallax');
+  pImgs.forEach(function(img){img.style.height='115%';img.style.width='100%';img.style.top='-7%';img.style.left='0';img.style.position='absolute';img.style.objectFit='cover';img.style.willChange='transform';});
+  var ticking=false;
+  function updateP(){pImgs.forEach(function(img){var c=img.parentElement;if(!c)return;var r=c.getBoundingClientRect();var prog=(window.innerHeight/2-(r.top+r.height/2))/window.innerHeight;img.style.transform='translateY('+(prog*0.25*260)+'px)';});ticking=false;}
+  if(pImgs.length){window.addEventListener('scroll',function(){if(!ticking){requestAnimationFrame(updateP);ticking=true;}},{passive:true});updateP();}
   var nav=document.getElementById('site-nav');
   if(nav)window.addEventListener('scroll',function(){nav.style.boxShadow=window.scrollY>20?'0 2px 24px rgba(44,44,42,.07)':'none';},{passive:true});
   if(!document.getElementById('_fx')){var st=document.createElement('style');st.id='_fx';st.textContent='.fx-card{transition:transform .35s,box-shadow .35s}.fx-card:hover{transform:translateY(-7px);box-shadow:0 16px 48px rgba(44,44,42,.1)}.gold-btn{background:#B8924A;color:#FDFCF9;font-size:12px;letter-spacing:.18em;text-transform:uppercase;padding:16px 40px;font-weight:400;display:inline-block;transition:background .3s;text-decoration:none}.gold-btn:hover{background:#9A7A3A;color:#FDFCF9}.outline-btn{border:1px solid #B8924A;color:#B8924A;font-size:12px;letter-spacing:.18em;text-transform:uppercase;padding:16px 40px;font-weight:400;display:inline-block;transition:all .3s;text-decoration:none}.outline-btn:hover{background:#B8924A;color:#FDFCF9}.gold-line{height:1px;background:#B8924A;opacity:.5}.section-label{font-size:11px;letter-spacing:.24em;text-transform:uppercase;color:#B8924A;margin-bottom:16px}';document.head.appendChild(st);}
